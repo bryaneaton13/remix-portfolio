@@ -2,7 +2,17 @@ import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@re
 import type { LinksFunction, MetaFunction } from '@remix-run/node';
 import styles from './styles/app.css';
 
-export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }];
+export const links: LinksFunction = () => [
+  {
+    rel: 'icon',
+    href: '/favicon.png',
+    type: 'image/png',
+  },
+  {
+    rel: 'stylesheet',
+    href: styles,
+  },
+];
 
 export const meta: MetaFunction = () => {
   return {
