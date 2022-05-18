@@ -14,7 +14,7 @@ export default function Title({
   text: string | ReactNode;
   color1?: Colors;
   color2?: Colors;
-  size?: 'sm' | 'md';
+  size?: 'sm' | 'md' | 'lg';
   className?: Cn;
 }) {
   return (
@@ -23,8 +23,9 @@ export default function Title({
         'animate-move-bg bg-gradient-to-r bg-[length:400%] bg-clip-text font-bold text-transparent',
         {
           'text-7xl': !size,
+          'text-4xl': size === 'lg',
           'text-2xl': size === 'md',
-          'text-xl': size === 'md',
+          'text-xl': size === 'sm',
         },
         {
           'from-green-500 to-green-500': color1 === 'green',

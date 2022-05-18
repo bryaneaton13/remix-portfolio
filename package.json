@@ -6,10 +6,11 @@
   "scripts": {
     "build": "npm run build:css && remix build",
     "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
-    "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
+    "dev": "concurrently \"npm run dev:css\" \"cross-env NODE_ENV=development netlify dev\"",
     "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
     "postinstall": "remix setup node",
     "start": "npm run dev",
+    "start:prod": "cross-env NODE_ENV=production netlify dev",
     "lint": "eslint \"app/**/*.+(ts|js|tsx)\"",
     "lint:fix": "npm run lint -- --fix",
     "serve": "remix-serve build"

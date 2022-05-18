@@ -4,8 +4,11 @@ import Page from '~/components/Page';
 export default function Index() {
   return (
     <Page>
-      <h3>Making a difference with technology</h3>
-      <h3>Full-stack software engineer · Technical founder · Husband · Father</h3>
+      <h3>
+        Making a difference with technology.
+        <br />
+        Full-stack software engineer · Technical founder · Husband · Father
+      </h3>
       <div className="mt-8" />
 
       <h2>Profiles</h2>

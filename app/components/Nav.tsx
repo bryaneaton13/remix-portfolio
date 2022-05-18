@@ -26,7 +26,7 @@ function Linky({ to, text }: { to: string; text: string }) {
 function LinksList() {
   return (
     <>
-      <Linky to="/" text="Home" />
+      {/* <Linky to="/" text="Home" /> */}
       {/* <Linky to="/resume" text="Resume" /> */}
       {/* <Linky to="/contact" text="Contact" /> */}
     </>
