@@ -1,54 +1,54 @@
 import ExtLink from '~/components/ExtLink';
 import Page from '~/components/Page';
 
+function List({ links }: { links: { url: string; title: string }[] }) {
+  return (
+    <ul className="list-disc list-inside text-slate-900 mt-2 mb-10">
+      {links.map((l) => (
+        <li key={l.url}>
+          <ExtLink href={l.url}>{l.title}</ExtLink>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function Index() {
   return (
     <Page>
-      <h3>
-        Making a difference with technology.
-        <br />
-        Full-stack software engineer · Technical founder · Husband · Father
-      </h3>
+      <h3 className="font-bold">Full-stack software engineer · Technical founder · Husband · Father</h3>
+      <p className="mt-4">
+        I am a co-founder for multiple technology solutions startups as well as supporting businesses in their
+        technology needs. My responsibilities have included development, architecture, infrastructure, maintenance,
+        customer support, and sales.
+      </p>
       <div className="mt-8" />
 
       <h2>Profiles</h2>
-      <ul className="list-disc list-inside text-slate-900 mt-2 mb-10">
-        <li>
-          <ExtLink href="https://github.com/bryaneaton13">GitHub</ExtLink>
-        </li>
-        <li>
-          <ExtLink href="https://www.linkedin.com/in/bryan-eaton/">Linked In</ExtLink>
-        </li>
-      </ul>
-
+      <List
+        links={[
+          { url: 'https://github.com/bryaneaton13', title: 'GitHub' },
+          { url: 'https://www.linkedin.com/in/bryan-eaton/', title: 'Linked In' },
+          { url: 'https://stackblitz.com/@bryaneaton13', title: 'Stackblitz' },
+        ]}
+      />
       <h2>Co-founder</h2>
-      <ul className="list-disc list-inside text-slate-900 mt-2 mb-10">
-        <li>
-          <ExtLink href="https://www.thryve.io/">Thryve</ExtLink>
-        </li>
-        <li>
-          <ExtLink href="https://www.learn.stitchedstory.com/">Stiched Story</ExtLink>
-        </li>
-        <li>
-          <ExtLink href="https://www.hrvids.com/">HRVids</ExtLink>
-        </li>
-      </ul>
-
+      <List
+        links={[
+          { url: 'https://www.thryve.io/', title: 'Thryve' },
+          { url: 'https://www.learn.stitchedstory.com/', title: 'Stiched Story' },
+          { url: 'https://www.hrvids.com/', title: 'HRVids' },
+        ]}
+      />
       <h2>Contract work</h2>
-      <ul className="list-disc list-inside text-slate-900 mt-2 mb-10">
-        <li>
-          <ExtLink href="https://www.zummedia.com/">Zum Media</ExtLink>
-        </li>
-        <li>
-          <ExtLink href="https://www.wycliffe.org/">Wycliffe</ExtLink>
-        </li>
-        <li>
-          <ExtLink href="https://www.cru.org/">Cru</ExtLink>
-        </li>
-        <li>
-          <ExtLink href="https://www.tribl.com/">Tribl</ExtLink>
-        </li>
-      </ul>
+      <List
+        links={[
+          { url: 'https://www.zummedia.com/', title: 'Zum Media' },
+          { url: 'https://www.wycliffe.org/', title: 'Wycliffe' },
+          { url: 'https://www.cru.org/', title: 'Cru' },
+          { url: 'https://www.tribl.com/', title: 'Tribl' },
+        ]}
+      />
     </Page>
   );
 }
