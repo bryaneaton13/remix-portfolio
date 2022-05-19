@@ -12,10 +12,10 @@ export const links: LinksFunction = () => [
     rel: 'stylesheet',
     href: styles,
   },
-  {
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Inter',
-  },
+  // {
+  //   rel: 'stylesheet',
+  //   href: 'https://fonts.googleapis.com/css?family=Inter',
+  // },
 ];
 
 export const meta: MetaFunction = () => {

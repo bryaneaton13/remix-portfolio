@@ -8,7 +8,7 @@ import classNames from 'classnames';
 export default function Page({ children, className, pageClassName }: ContainerProps & { pageClassName?: Cn }) {
   return (
     <div
-      style={{ fontFamily: "'Inter', system-ui, sans-serif", lineHeight: '1.4' }}
+      style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}
       className={classNames('h-screen flex flex-col justify-between', pageClassName)}
     >
       <Nav />
