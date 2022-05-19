@@ -5,7 +5,7 @@ function List({ links }: { links: { url: string; title: string }[] }) {
   return (
     <ul className="list-disc list-inside text-slate-900 mt-2 mb-10">
       {links.map((l) => (
-        <li key={l.url}>
+        <li key={l.url} className="my-1">
           <ExtLink href={l.url}>{l.title}</ExtLink>
         </li>
       ))}
