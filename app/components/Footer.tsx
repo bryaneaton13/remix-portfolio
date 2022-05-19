@@ -7,6 +7,13 @@ export default function Footer() {
           Bryan Eaton
         </a>
         . All Rights Reserved.
+        <br />
+        <a
+          href="https://github.com/bryaneaton13/remix-portfolio"
+          className="underline hover:text-gray-400 transition-all"
+        >
+          GitHub Repo
+        </a>
       </span>
     </footer>
   );
