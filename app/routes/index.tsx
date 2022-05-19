@@ -28,7 +28,7 @@ export default function Index() {
       <List
         links={[
           { url: 'https://github.com/bryaneaton13', title: 'GitHub' },
-          { url: 'https://www.linkedin.com/in/bryan-eaton/', title: 'Linked In' },
+          { url: 'https://www.linkedin.com/in/bryan-eaton/', title: 'LinkedIn' },
           { url: 'https://stackblitz.com/@bryaneaton13', title: 'Stackblitz' },
         ]}
       />
@@ -37,7 +37,7 @@ export default function Index() {
         links={[
           { url: 'https://www.thryve.io/', title: 'Thryve' },
           { url: 'https://www.learn.stitchedstory.com/', title: 'Stiched Story' },
-          { url: 'https://www.hrvids.com/', title: 'HRVids' },
+          { url: 'https://www.hrvids.com/', title: 'HR Vids' },
         ]}
       />
       <h2>Contract work</h2>
