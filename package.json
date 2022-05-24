@@ -1,6 +1,10 @@
 {
   "private": true,
-  "name": "remix-app-template",
+  "version": "1.0.0",
+  "name": "remix-portfolio",
+  "author": {
+    "name": "Bryan Eaton"
+  },
   "description": "",
   "license": "",
   "scripts": {
