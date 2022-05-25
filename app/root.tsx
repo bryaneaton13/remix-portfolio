@@ -1,6 +1,7 @@
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
 import type { LinksFunction, MetaFunction } from '@remix-run/node';
 import styles from './styles/app.css';
+import NotFoundPage from './components/NotFoundPage';
 
 export const links: LinksFunction = () => [
   {
@@ -27,6 +28,37 @@ export const meta: MetaFunction = () => {
     viewport: 'width=device-width,initial-scale=1',
   };
 };
+
+export function ErrorBoundary({ error }: { error: Error }) {
+  console.error(error);
+  return (
+    <html>
+      <head>
+        <title>Oh no!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <div className="text-red-500">ERROR: {error.message}</div>;
+        <Scripts />
+      </body>
+    </html>
+  );
+}
+export function CatchBoundary() {
+  return (
+    <html>
+      <head>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <NotFoundPage />
+        <Scripts />
+      </body>
+    </html>
+  );
+}
 
 export default function App() {
   return (

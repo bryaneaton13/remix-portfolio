@@ -15,6 +15,7 @@ export const action: ActionFunction = async ({ request }) => {
 export default function Contact() {
   const data = useActionData();
   const transition = useTransition();
+  console.log('data', data);
   return (
     <Page>
       <Form method="post" className="px-4 mt-10">

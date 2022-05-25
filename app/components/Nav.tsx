@@ -2,6 +2,7 @@ import { Link, NavLink } from '@remix-run/react';
 import classNames from 'classnames';
 import Title from './Title';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function Linky({ to, text }: { to: string; text: string }) {
   return (
     <li>

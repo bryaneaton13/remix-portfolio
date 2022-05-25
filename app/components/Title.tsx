@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import classNames from 'classnames';
-import { Cn } from '~/utils/types';
+import type { Cn } from '~/utils/types';
 
 type Colors = 'green' | 'blue' | 'red' | 'purple' | 'orange' | 'indigo';
 
