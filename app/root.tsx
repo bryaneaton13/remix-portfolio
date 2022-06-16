@@ -22,7 +22,7 @@ export const links: LinksFunction = () => [
 export const meta: MetaFunction = () => {
   const title = 'Bryan Eaton | Software Engineer and Co-founder';
   const description = `Entrepreneur and software engineer using technology to give businesses the tools they need to engage with their people.`;
-  const image = 'https://bryaneaton.com/images/BryanEatonLogo.png';
+  const image = 'https://bryaneaton.com/images/BryanEatonLogoShapes.png';
   return {
     viewport: 'width=device-width,initial-scale=1',
     charset: 'utf-8',
