@@ -20,12 +20,24 @@ export const links: LinksFunction = () => [
 ];
 
 export const meta: MetaFunction = () => {
+  const title = 'Bryan Eaton';
+  const description = `Bryan Eaton - Making a difference with technology · Full-stack software engineer · Co-founder · Husband · Father`;
+  const image = '/images/BryanEatonLogo.png';
   return {
-    charset: 'utf-8',
-    // "og:image": "TODO",
-    title: 'Bryan Eaton',
-    description: "Bryan Eaton's website",
     viewport: 'width=device-width,initial-scale=1',
+    charset: 'utf-8',
+    title,
+    description,
+    'og:title': title,
+    'og:description': description,
+    'og:image': image,
+    'og:image:alt': 'Bryan Eaton',
+    'og:type': 'website',
+    'twitter:title': title,
+    'twitter:description': description,
+    'twitter:image': image,
+    'twitter:image:alt': 'Bryan Eaton',
+    'twitter:card': 'website',
   };
 };
 
