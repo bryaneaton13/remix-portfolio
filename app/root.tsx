@@ -20,8 +20,8 @@ export const links: LinksFunction = () => [
 ];
 
 export const meta: MetaFunction = () => {
-  const title = 'Bryan Eaton';
-  const description = `Bryan Eaton - Making a difference with technology · Full-stack software engineer · Co-founder · Husband · Father`;
+  const title = 'Bryan Eaton | Software Engineer and Co-founder';
+  const description = `Entrepreneur and software engineer using technology to give businesses the tools they need to engage with their people.`;
   const image = 'https://bryaneaton.com/images/BryanEatonLogo.png';
   return {
     viewport: 'width=device-width,initial-scale=1',
@@ -37,7 +37,7 @@ export const meta: MetaFunction = () => {
     'twitter:description': description,
     'twitter:image': image,
     'twitter:image:alt': 'Bryan Eaton',
-    'twitter:card': 'website',
+    'twitter:card': 'summary_large_image',
   };
 };
 

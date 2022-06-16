@@ -18,9 +18,9 @@ export default function Index() {
     <Page>
       <h3 className="font-bold">Full-stack software engineer · Technical founder · Husband · Father</h3>
       <p className="mt-4">
-        I am a co-founder for multiple technology solutions startups as well as supporting businesses in their
-        technology needs. My responsibilities have included development, architecture, infrastructure, maintenance,
-        customer support, and sales.
+        I am a co-founder and entrepreneur for multiple technology solutions startups as well as supporting businesses
+        in their technology needs. My responsibilities have included development, architecture, infrastructure,
+        maintenance, customer support, and sales.
       </p>
       <div className="mt-8" />
 
