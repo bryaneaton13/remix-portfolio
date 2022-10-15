@@ -36,7 +36,7 @@ export default function Index() {
       <List
         links={[
           { url: 'https://www.thryve.io/', title: 'Thryve' },
-          { url: 'https://www.learn.stitchedstory.com/', title: 'Stiched Story' },
+          { url: 'https://www.learn.stitchedstory.com/', title: 'Stitched Story' },
           { url: 'https://www.hrvids.com/', title: 'HR Vids' },
         ]}
       />

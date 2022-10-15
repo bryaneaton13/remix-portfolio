@@ -1,5 +1,6 @@
 import { Link, NavLink } from '@remix-run/react';
 import classNames from 'classnames';
+import { Configs } from '~/utils/configs';
 import Title from './Title';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -25,11 +26,12 @@ function Linky({ to, text }: { to: string; text: string }) {
 }
 
 function LinksList() {
+  if (!Configs.isLocal) return null;
   return (
     <>
-      {/* <Linky to="/" text="Home" /> */}
-      {/* <Linky to="/resume" text="Resume" /> */}
-      {/* <Linky to="/contact" text="Contact" /> */}
+      <Linky to="/" text="Home" />
+      <Linky to="/resume" text="Resume" />
+      <Linky to="/contact" text="Contact" />
     </>
   );
 }

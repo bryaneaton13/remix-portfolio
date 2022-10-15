@@ -2,6 +2,9 @@ import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@re
 import type { LinksFunction, MetaFunction } from '@remix-run/node';
 import styles from './styles/app.css';
 import NotFoundPage from './components/NotFoundPage';
+import { Configs } from './utils/configs';
+import Page from './components/Page';
+import Button from './components/Button';
 
 export const links: LinksFunction = () => [
   {
@@ -51,7 +54,10 @@ export function ErrorBoundary({ error }: { error: Error }) {
         <Links />
       </head>
       <body>
-        <div className="text-red-500">ERROR: {error.message}</div>;
+        <Page>
+          <div className="text-red-500">ERROR: {error.message}</div>
+          <Button onClick={() => window.location.reload()}>Reload</Button>
+        </Page>
         <Scripts />
       </body>
     </html>
@@ -85,7 +91,7 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        {process.env.NODE_ENV === 'development' && <LiveReload />}
+        {Configs.isLocal && <LiveReload />}
       </body>
     </html>
   );

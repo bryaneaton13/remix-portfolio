@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import type { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
 
-export default function Title(props: DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>) {
+export default function Button(props: DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>) {
   return (
     <button
       type="submit"
