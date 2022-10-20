@@ -13,9 +13,9 @@ function Linky({ to, text }: { to: string; text: string }) {
           classNames(
             'block py-1 pr-4 pl-3 bg-transparent text-white p-0 hover:text-blue-300 md:py-2',
             {
-              'text-blue-500 font-bold': isActive,
+              'text-blue-400 font-bold': isActive,
             },
-            'nav-link nav-link-underline nav-link-underline-white',
+            'nav-link nav-link-underline',
           )
         }
       >
@@ -26,12 +26,11 @@ function Linky({ to, text }: { to: string; text: string }) {
 }
 
 function LinksList() {
-  if (!Configs.isLocal) return null;
   return (
     <>
       <Linky to="/" text="Home" />
       <Linky to="/resume" text="Resume" />
-      <Linky to="/contact" text="Contact" />
+      {/* {Configs.isLocal && <Linky to="/contact" text="Contact" />} */}
     </>
   );
 }
@@ -44,7 +43,7 @@ export default function Nav() {
           <Title text="Bryan Eaton" size="md" />
         </Link>
         <div className="flex-1" />
-        <div className="w-auto hidden md:block">
+        <div className="w-auto">
           <ul className="flex flex-row space-x-8 text-sm font-medium">
             <LinksList />
           </ul>
