@@ -40,7 +40,9 @@ export function Thanks() {
   return (
     <div className="flex items-center justify-center mt-6">
       <div className="flex flex-col items-center space-y-2">
-        <CheckMark />
+        <div className="animate-pulse">
+          <CheckMark />
+        </div>
         <h1 className="text-4xl font-bold">Thank You!</h1>
         <Link to="/" className="underline text-blue-400">
           Home

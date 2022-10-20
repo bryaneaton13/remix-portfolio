@@ -1,7 +1,14 @@
 node_modules
 
-/.cache
-/build
+.cache
+.env
+.vercel
+.output
+
+/build/
 /public/build
-/.netlify
+/api/index.js
+/api/index.js.map
+/api/_assets/
+
 /app/styles/app.css
